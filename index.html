@@ -4,299 +4,395 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
-    <link rel="stylesheet" href="./assets/base2.css" />
-    <link rel="stylesheet" href="./assets/main2.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">My <span>CV</span></a>
-      <nav class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#about" style="--i: 2">About</a>
-        <a href="#services" style="--i: 3">Services</a>
-        <a href="#skills" style="--i: 4">Skills</a>
-        <a href="#contact" style="--i: 5">Contact</a>
-      </nav>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-title">My <span class="text-color">CV</span></div>
+      <ul class="header-list">
+        <div class="header-item">
+          <a
+            class="header-item-link header-item--active"
+            style="--i: 1"
+            href="#"
+            >Home</a
+          >
+        </div>
+        <div class="header-item">
+          <a class="header-item-link" style="--i: 2" href="#about">About</a>
+        </div>
+        <div class="header-item">
+          <a class="header-item-link" style="--i: 3" href="#services"
+            >Services</a
+          >
+        </div>
+        <div class="header-item">
+          <a class="header-item-link" style="--i: 4" href="#skills">Skils</a>
+        </div>
+        <div class="header-item">
+          <a class="header-item-link" style="--i: 5" href="#contact">Contact</a>
+        </div>
+        <div class="line"></div>
+      </ul>
     </header>
-    <section class="home">
-      <div class="home__content">
-        <h3>Hello, It's Me</h3>
-        <h1>Hoang Kha</h1>
-        <h3>And I'm a <span class="text"></span></h3>
-        <p>
-          I'm a web Designer with extensive experience for over 3 year.<br />Expertise
-          is to create and website design, Frontend design, and many more...
-        </p>
-        <div class="home__sci">
-          <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
-          <a href="#" style="--i: 7"><i class="bx bxl-instagram"></i></a>
-          <a href="#" style="--i: 8"><i class="bx bxl-whatsapp"></i></a>
-          <a href="#" style="--i: 9"><i class="bx bxl-tiktok"></i></a>
-        </div>
-        <a href="#" class="btn__box">More About Me</a>
-      </div>
-      <img src="./assets/img/avatar2.png" alt="" class="home__img" />
-    </section>
-    <section class="about" id="about">
-      <div class="about__img">
-        <img src="./assets/img/avatar2.png" class="img" alt="" />
-      </div>
-      <div class="about__text">
-        <h2>About<span>Me</span></h2>
-        <h4>Full Stack Developer!</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ipsa
-          similique, sequi ipsum, pariatur nisi aspernatur omnis molestiae
-          dolore vero alias eius impedit officia blanditiis natus porro
-          cupiditate esse nulla.
-        </p>
-        <a href="#" class="btn__box">More About Me</a>
-      </div>
-    </section>
-    <section>
-      <div class="services" id="services">
-        <div class="container">
-          <h1 class="sub__title">My <span>Services</span></h1>
-          <div class="services__list">
-            <div>
-              <i class="bx bx-code" style="color: #00eeff"></i>
-              <h2>UI/UX Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                labore quis laboriosam assumenda perspiciatis. Ex perspiciatis
-                nam sunt fugit, tempore facilis ratione obcaecati dolorem neque
-                atque in ut nobis nihil!
-              </p>
-              <a href="#" class="read">Learn more</a>
-            </div>
-            <div>
-              <i class="bx bx-crop" style="color: #00eeff"></i>
-              <h2>UI/UX Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                labore quis laboriosam assumenda perspiciatis. Ex perspiciatis
-                nam sunt fugit, tempore facilis ratione obcaecati dolorem neque
-                atque in ut nobis nihil!
-              </p>
-              <a href="#" class="read">Learn more</a>
-            </div>
-            <div>
-              <i class="bx bxl-apple" style="color: #00eeff"></i>
-              <h2>UI/UX Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                labore quis laboriosam assumenda perspiciatis. Ex perspiciatis
-                nam sunt fugit, tempore facilis ratione obcaecati dolorem neque
-                atque in ut nobis nihil!
-              </p>
-              <a href="#" class="read">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <h1 class="sub__title">My <span>Skills</span></h1>
-    <section>
-      <div class="container1" id="skills">
-        <h1 class="heading1">Technical Skills</h1>
-        <div class="technical__bars">
-          <div class="bar">
-            <i class="bx bxl-html5" style="color: #c95d2e"></i>
-            <div class="info">
-              <span>HTML</span>
-            </div>
-            <div class="progress__line html">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-css3" style="color: #147bbc"></i>
-            <div class="info">
-              <span>CSS</span>
-            </div>
-            <div class="progress__line css">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-javascript" style="color: #b0bc1e"></i>
-            <div class="info">
-              <span>Javascript</span>
-            </div>
-            <div class="progress__line javasript">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-python" style="color: #c32ec9"></i>
-            <div class="info">
-              <span>Python</span>
-            </div>
-            <div class="progress__line python">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-react" style="color: #69bcbc"></i>
-            <div class="info">
-              <span>React</span>
-            </div>
-            <div class="progress__line react">
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container1">
-        <h1 class="heading1">Professional Skills</h1>
-        <div class="radial__bars">
-          <div class="radial__bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress__bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">90%</div>
-            <div class="text">Creativity</div>
-          </div>
-          <div class="radial__bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress__bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">65%</div>
-            <div class="text">Communication</div>
-          </div>
-          <div class="radial__bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress__bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">75%</div>
-            <div class="text">Problem Solving</div>
-          </div>
-          <div class="radial__bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress__bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">85%</div>
-            <div class="text">TeamWork</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div id="portfolio" id="project">
-        <div class="main__text" id="project">
-          <h2>Latest <span>Project</span></h2>
 
-          <div class="portfolio__content">
-            <div class="row">
-              <img src="./assets/img/5757453.jpg" />
-              <div class="layer">
-                <h5>UI/UX Design</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem, reiciendis ex? Repellendus vel dicta dolore,
-                  porro, natus ipsam at molestias alias sapiente consequuntur
-                  quo? Laudantium autem soluta assumenda aperiam sit.
-                </p>
-                <a href="#"
-                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col l-2 m-12 c-12">
+            <div class="home-content">
+              <h3>Hello, It's Me</h3>
+              <h1>Hoang Kha</h1>
+              <h3>And I'm a <span class="text"></span></h3>
+              <p>
+                I'm a web Designer with extensive experience for over 1
+                year.Expertise is to create and website design, Frontend design,
+                and many more...
+              </p>
+              <div class="home-link">
+                <a class="icon-link" href="#" style="--i: 5"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a class="icon-link" href="#" style="--i: 6"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a class="icon-link" href="#" style="--i: 7"
+                  ><i class="bx bxl-whatsapp"></i
+                ></a>
+                <a class="icon-link" href="#" style="--i: 8"
+                  ><i class="bx bxl-tiktok"></i
                 ></a>
               </div>
+              <a href="#about" class="btn">More About Me</a>
             </div>
-            <div class="row">
-              <img src="./assets/img/5467393_1687.jpg" />
-              <div class="layer">
-                <h5>UI/UX Design</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem, reiciendis ex? Repellendus vel dicta dolore,
-                  porro, natus ipsam at molestias alias sapiente consequuntur
-                  quo? Laudantium autem soluta assumenda aperiam sit.
-                </p>
-                <a href="#"
-                  ><i class="bx bx-link-external" style="color: aliceblue"></i
-                ></a>
-              </div>
+            <div class="home-img">
+              <img src="img/avatar2.png" alt="" class="img" />
             </div>
-            <div class="row">
-              <img src="./assets/img/4174812.jpg" />
-              <div class="layer">
-                <h5>UI/UX Design</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem, reiciendis ex? Repellendus vel dicta dolore,
-                  porro, natus ipsam at molestias alias sapiente consequuntur
-                  quo? Laudantium autem soluta assumenda aperiam sit.
-                </p>
-                <a href="#"
-                  ><i class="bx bx-link-external" style="color: aliceblue"></i
-                ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col c-12 l-6 m-12">
+            <div class="about-img">
+              <img src="/img/avatar2.png" alt="" class="img" />
+            </div>
+          </div>
+          <div class="col c-12 l-6 m-12">
+            <div class="about-text">
+              <h1>About <span class="text-color">Me</span></h1>
+              <h5>Full Stack Developer!</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                aspernatur adipisci maiores odit vitae sit est cupiditate
+                obcaecati, voluptatum repudiandae eaque accusamus dicta, aperiam
+                beatae nobis rem, minus quas numquam!
+              </p>
+              <div class="about-btn">
+                <a href="#services" class="btn">More About Me</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="contact" id="contact">
-      <div class="contact__text">
-        <h2>Contact <span>Me</span></h2>
-        <h4>Let's work Together</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-          molestias mollitia ut ipsam sint cum optio possimus quasi voluptatibus
-          in. Assumenda aspernatur sunt nemo voluptatibus, laudantium officiis
-          exercitationem architecto dicta.
-        </p>
-        <div class="contact__list">
-          <li><i class="bx bx-send"></i><span>khath2004@gmail.com</span></li>
-          <li><i class="bx bxs-phone"></i><span>+84 0342333084</span></li>
+
+    <!-- Service -->
+    <section class="services" id="services">
+      <h1>My <span class="text-color">Services</span></h1>
+      <div class="grid wide">
+        <div class="row service-list">
+          <!-- Item 1 -->
+          <div class="col l-4">
+            <div class="service-item">
+              <i class="bx bx-code" style="color: var(--paint-color)"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat quam temporibus optio natus assumenda officiis itaque
+                facilis excepturi culpa soluta. Perferendis inventore aut
+                possimus quis veniam, natus accusamus consequuntur totam?
+              </p>
+              <div class="service-btn">
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="col l-4">
+            <div class="service-item">
+              <i class="bx bx-crop" style="color: var(--paint-color)"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat quam temporibus optio natus assumenda officiis itaque
+                facilis excepturi culpa soluta. Perferendis inventore aut
+                possimus quis veniam, natus accusamus consequuntur totam?
+              </p>
+              <div class="service-btn">
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="col l-4">
+            <div class="service-item">
+              <i class="bx bxl-apple" style="color: var(--paint-color)"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat quam temporibus optio natus assumenda officiis itaque
+                facilis excepturi culpa soluta. Perferendis inventore aut
+                possimus quis veniam, natus accusamus consequuntur totam?
+              </p>
+              <div class="service-btn">
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!--End: Item-->
         </div>
-        <div class="contact__icon">
-          <a href=""><i class="bx bxl-facebook-circle"></i></a>
-          <a href=""><i class="bx bxl-twitter"></i></a>
-          <a href=""><i class="bx bxl-instagram"></i></a>
-          <a href=""><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="contact__form">
-        <form action="">
-          <input type="text" placeholder="Enter Your Name" required />
-          <input type="email" placeholder="Enter Your Email" required />
-          <input type="text" placeholder="Enter Your Subject" />
-          <textarea
-            name=""
-            id=""
-            cols="40"
-            rows="10"
-            placeholder="Enter Your Message"
-            required
-          ></textarea>
-          <input type="submit" value="SUBMIT" class="send" />
-        </form>
       </div>
     </section>
-    <div class="last__text">
-      <p>Developed with love by Hoang Kha 2023</p>
-    </div>
-    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h1>My <span class="text-color">Skills</span></h1>
+      <div class="grid wide">
+        <div class="row">
+          <!-- Begin: Skill 1 -->
+          <div class="col c-12 l-6 m-12">
+            <div class="title">
+              <h3 class="skills-title">Technical Skills</h3>
+            </div>
+            <div class="technical-list">
+              <!-- HTML -->
+              <div class="technical-item">
+                <i class="bx bxl-html5" style="color: #c95d2e"></i>
+                <div class="body">
+                  <span>HTML</span>
+                </div>
+                <div class="line-item html">
+                  <span></span>
+                </div>
+              </div>
+
+              <!-- CSS -->
+              <div class="technical-item">
+                <i class="bx bxl-css3" style="color: #147bbc"></i>
+                <div class="body">
+                  <span>CSS</span>
+                </div>
+                <div class="line-item css">
+                  <span></span>
+                </div>
+              </div>
+
+              <!-- JAVASRIPT -->
+              <div class="technical-item">
+                <i class="bx bxl-javascript" style="color: #b0bc1e"></i>
+                <div class="body">
+                  <span>Javascript</span>
+                </div>
+                <div class="line-item javascript">
+                  <span></span>
+                </div>
+              </div>
+
+              <!-- PYTHON -->
+              <div class="technical-item">
+                <i class="bx bxl-python" style="color: #c32ec9"></i>
+                <div class="body">
+                  <span>Python</span>
+                </div>
+                <div class="line-item python">
+                  <span></span>
+                </div>
+              </div>
+
+              <!-- REACT -->
+              <div class="technical-item">
+                <i class="bx bxl-react" style="color: #69bcbc"></i>
+                <div class="body">
+                  <span>React</span>
+                </div>
+                <div class="line-item react">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End: Skill 1 -->
+
+          <!-- Begin: Skill 2 -->
+          <div class="col c-12 l-6 m-12 skill-2">
+            <div class="title">
+              <h3 class="skills-title">Professional Skills</h3>
+            </div>
+            <div class="radial-list">
+              <!-- Radial 1 -->
+              <div class="radial-item">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle
+                    class="progress__bar"
+                    cx="100"
+                    cy="100"
+                    r="80"
+                  ></circle>
+                  <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">90%</div>
+                <div class="text">Creativity</div>
+              </div>
+
+              <!-- Radial 2 -->
+              <div class="radial-item">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle
+                    class="progress__bar"
+                    cx="100"
+                    cy="100"
+                    r="80"
+                  ></circle>
+                  <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">65%</div>
+                <div class="text">Communication</div>
+              </div>
+
+              <!-- Radial 3 -->
+              <div class="radial-item">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle
+                    class="progress__bar"
+                    cx="100"
+                    cy="100"
+                    r="80"
+                  ></circle>
+                  <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">75%</div>
+                <div class="text">Problem Solving</div>
+              </div>
+              <!-- Radial 4 -->
+              <div class="radial-item">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle
+                    class="progress__bar"
+                    cx="100"
+                    cy="100"
+                    r="80"
+                  ></circle>
+                  <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">85%</div>
+                <div class="text">Team Work</div>
+              </div>
+            </div>
+          </div>
+          <!-- End: Skill 2 -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="grid wide">
+        <div class="row">
+          <div class="col c-12 l-6 m-12">
+            <div class="contact-text">
+              <div class="title">
+                <h1>Contact <span class="text-color">Me</span></h1>
+                <h3>Let's work Together</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                amet veniam inventore repellat, optio repellendus culpa a magni
+                laudantium magnam sequi distinctio perferendis praesentium
+                debitis minima nulla, accusantium repudiandae possimus!
+              </p>
+              <div class="contact-info">
+                <li>
+                  <i class="bx bxs-envelope"></i
+                  ><span>khath2004@gmail.com</span>
+                </li>
+                <li><i class="bx bxs-phone"></i><span>+84 342333084</span></li>
+              </div>
+              <div class="contact-icon">
+                <a class="icon-link" href=""
+                  ><i class="bx bxl-facebook-circle"></i
+                ></a>
+                <a class="icon-link" href=""><i class="bx bxl-twitter"></i></a>
+                <a class="icon-link" href=""
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a class="icon-link" href=""><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col c-12 l-6 m-12">
+            <div class="contact-form">
+              <form action="">
+                <div class="input-box">
+                  <input type="text" required />
+                  <div class="text-box">
+                    <i class="bx bxs-user"></i>
+                    <label>Enter Your Name</label>
+                  </div>
+                  <span></span>
+                </div>
+                <div class="input-box">
+                  <input type="email" required />
+                  <div class="text-box">
+                    <i class="bx bxs-envelope"></i>
+                    <label>Enter Your Email</label>
+                  </div>
+                  <span></span>
+                </div>
+                <div class="input-box">
+                  <input type="text" required />
+                  <div class="text-box">
+                    <i class="bx bxs-notepad"></i>
+                    <label>Enter Your Subject</label>
+                  </div>
+                  <span></span>
+                </div>
+                <div class="input-box">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="10"
+                    rows="3"
+                    required
+                  ></textarea>
+                  <div class="textarea-box">
+                    <i class="bx bxs-message-square-detail"></i>
+                    <label>Enter Your Message</label>
+                  </div>
+                  <p></p>
+                </div>
+                <input type="submit" value="SUBMIT" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div><i class="bx bx-copyright"></i> 2023 Design by Kha</div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
