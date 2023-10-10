@@ -21,3 +21,13 @@ tabs.forEach((tab, index) => {
     line.style.width = this.offsetWidth + 'px'
   }
 });
+
+
+const title = $('.header-title');
+const result = $('.return');
+title.onclick = function() {
+  $('.header-item-link.header-item--active').classList.remove('header-item--active')
+  result.classList.add('header-item--active')
+  line.style.left = result.offsetLeft + 'px'
+  line.style.width = result.offsetWidth + 'px'
+}

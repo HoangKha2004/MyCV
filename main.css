@@ -22,7 +22,7 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  background: linear-gradient(90deg, rgb(2, 14, 15), rgb(1, 18, 24));
+  background: linear-gradient(90deg, #030c0e, #010a0e);
 }
 textarea {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -37,12 +37,12 @@ textarea {
   align-items: center;
   height: var(--header-height);
   background: var(--black-color);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   padding: 0 16px;
   z-index: 1000;
 }
 .header-title {
   font-size: 2.4rem;
+  text-decoration: none;
   color: var(--white-color);
   padding: 12px 24px;
   font-weight: 600;
@@ -254,7 +254,8 @@ textarea {
   width: 350px;
 }
 .about-text {
-  /* padding-left: px; */
+  position: relative;
+  cursor: default;
 }
 .about-text h1 {
   color: var(--white-color);
@@ -264,11 +265,21 @@ textarea {
   margin-bottom: var(--margin-bottom);
 }
 .about-text h5 {
+  position: relative;
   color: var(--white-color);
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin: 0;
-  margin-bottom: var(--margin-bottom);
-  font-weight: 500;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.about-text h5::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  height: 2px;
+  background: linear-gradient(270deg, rgb(0, 0, 0), #ffffff);
+  width: 41%;
 }
 .about-text p {
   color: var(--text-color);
@@ -276,6 +287,7 @@ textarea {
   text-align: justify;
   line-height: 1.4;
   margin: 0;
+  margin-top: 30px;
 }
 .about-btn {
   width: 100%;
@@ -292,6 +304,7 @@ textarea {
   color: var(--white-color);
   font-size: 6rem;
   width: 100%;
+  cursor: default;
 }
 
 .service-item {
@@ -339,6 +352,7 @@ textarea {
   width: 100%;
   text-align: center;
   position: relative;
+  cursor: default;
 }
 
 .skills {
@@ -353,6 +367,7 @@ textarea {
   margin-top: 0;
   margin-bottom: 24px;
   padding: 30px 0;
+  cursor: default;
 }
 .skills-title {
   position: relative;
@@ -369,7 +384,6 @@ textarea {
   left: 0;
   height: 2px;
   top: calc(100% + 2px);
-  /* background: var(--white-color); */
   background: linear-gradient(270deg, rgb(0, 0, 0), #ffffff);
 }
 .technical-list {
@@ -391,6 +405,7 @@ textarea {
   margin-bottom: 4px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
+  cursor: default;
 }
 
 @keyframes showText {
@@ -601,6 +616,7 @@ textarea {
   font-size: 1.7rem;
   font-weight: 600;
   color: var(--text-color);
+  cursor: default;
 }
 .radial-item .text {
   width: 100%;
@@ -610,6 +626,7 @@ textarea {
   font-size: 1.6rem;
   color: var(--white-color);
   font-weight: 500;
+  cursor: default;
 }
 
 /* Contact */
@@ -623,10 +640,22 @@ textarea {
   margin: 0;
 }
 .contact-text h3 {
+  position: relative;
   color: var(--white-color);
   font-size: 2rem;
-  margin: 12px 0;
+  margin: 12px 0 40px 0;
   font-weight: 500;
+}
+.contact-text h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  bottom: -6px;
+  width: 35%;
+  background: linear-gradient(270deg, rgb(0, 0, 0), #ffffff);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .contact-text p {
   color: var(--text-color);
@@ -634,6 +663,7 @@ textarea {
   text-align: justify;
   line-height: 1.4;
   margin-bottom: 32px;
+  cursor: default;
 }
 
 .contact-info li {
@@ -643,6 +673,7 @@ textarea {
   font-size: 1.4rem;
   list-style: none;
   margin-bottom: 12px;
+  cursor: default;
 }
 .contact-info li i {
   margin-right: 12px;
@@ -875,11 +906,22 @@ textarea {
     margin-top: 70px;
   }
   .home-content {
-    padding-top: 100px;
+    margin-top: 80px;
     padding-right: 5%;
   }
+  .about {
+    padding-top: 0;
+    margin-top: 85px;
+  }
+  .about-mr {
+    margin-top: 10px;
+  }
   .about-text {
-    padding-top: 100px;
+    margin-top: 100px;
+  }
+  .about-text h1,
+  .about-text h5 {
+    margin: 0 auto;
   }
   .technical-list {
     padding: 0 5%;
